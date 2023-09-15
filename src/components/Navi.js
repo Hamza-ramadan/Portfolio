@@ -33,11 +33,11 @@ const Navi = () => {
             </div>
             
             <ul className="nav">
-                <li><NavLink to={"/"}><HiHomeModern/>Home</NavLink ></li>
-                <li><NavLink to={"/About"}><FaUserInjured/>About</NavLink ></li>
-                <li><NavLink to={"/Services"}><RiServiceLine/>Services</NavLink ></li>
-                <li><NavLink to={"/Portfolio"}><DiCodeigniter/>Portfolio</NavLink ></li>
-                <li><NavLink to={"/Contact"}><BsHeadset/>Contact</NavLink ></li>
+                <li><NavLink onClick={showNav} to={"/"}><HiHomeModern/>Home</NavLink ></li>
+                <li><NavLink onClick={showNav} to={"/About"}><FaUserInjured/>About</NavLink ></li>
+                <li><NavLink onClick={showNav} to={"/Services"}><RiServiceLine/>Services</NavLink ></li>
+                <li><NavLink onClick={showNav} to={"/Portfolio"}><DiCodeigniter/>Portfolio</NavLink ></li>
+                <li><NavLink onClick={showNav} to={"/Contact"}><BsHeadset/>Contact</NavLink ></li>
             </ul>
         </div></div>
         </div>
