@@ -1,23 +1,44 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Layout from './components/Layout';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Services from './Pages/Services';
+import Contact from './Pages/Contact';
+import Portfolio from './Pages/Portfolio';
+import { useEffect, useState } from 'react';
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 function App() {
+  const [loading , setLoading] = useState(false);
+
+  useEffect(() => {
+
+    setLoading(true);
+    setTimeout(() =>{
+      setLoading(false);
+    },7000)
+    
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        loading ? <div className="loadddd"><ClimbingBoxLoader
+        color={"#ec1839"}
+        loading={loading}
+        size={50}
+      /></div>:<Routes>
+      <Route path='' element={<Layout/>}>
+        <Route path='/' element={<Home/>} />
+        <Route path='/About' element={<About/>} />
+        <Route path='/Services' element={<Services/>} />
+        <Route path='/Contact' element={<Contact/>} />
+        <Route path='/Portfolio' element={<Portfolio/>} />
+      </Route>
+    </Routes>
+      }
+      
     </div>
   );
 }
