@@ -28,7 +28,7 @@ const Home = () => {
                     <p>I' m a web Desiner with extensive experience for over 1 year. My expertise is to 
                         creat and websit design , graphic design and many more......
                     </p>
-                    <Link href="#contact" className="btns">More About Me</Link>
+                    <Link to={"/About"} className="btns">More About Me</Link>
                 </div>
                 <div className="home-img col-12 col-md-5">
                     <img data-aos="flip-up" src={img_me_} alt="" />
