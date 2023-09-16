@@ -16,7 +16,7 @@ const Home = () => {
                     <h3 className="hello">Hello , my name is <span>Hamza Ramadan .</span></h3>
                     <h3 className="profession">I' m a <span className="typing">
                     <Typewriter
-            words={["Web Developer.","","Web Desginer.","Player Football."]}
+            words={["Web Developer.","","Front End.",""]}
             loop={40}
             cursor
             cursorStyle='_'
@@ -25,8 +25,8 @@ const Home = () => {
             delaySpeed={1000}
             
           /></span></h3>
-                    <p>I' m a web Desiner with extensive experience for over 1 year. My expertise is to 
-                        creat and websit design , graphic design and many more......
+                    <p>I am a web developer and have extensive experience in creating websites, 
+                        My experience is creating and designing websites, graphic design and many more......
                     </p>
                     <Link to={"/About"} className="btns">More About Me</Link>
                 </div>
