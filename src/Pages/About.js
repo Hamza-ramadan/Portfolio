@@ -162,8 +162,7 @@ function Widddhha({w}){
                                                 <h4 className="timeline-title">
                                                     Master's in Computer Scince
                                                 </h4>
-                                                <p>I studied computers at the private Taiba Academy after high school because 
-                                                    the total was not good enough for me to enter a government university and the reason for choosing the academy is my love for programming</p>
+                                                <p>I studied computers at the private Thebes Academy after High School .</p>
                                             </div>
                                         </div>
                                         <div className="timelnie shadow-dark" data-aos="flip-left">
